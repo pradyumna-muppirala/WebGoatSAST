@@ -27,8 +27,8 @@ jobs:
         upstream_repository: WebGoat/WebGoat
         upstream_branch: main
         target_branch: main
-        github_token: ${{ secrets.GITHUB_TOKEN }}       # optional, for accessing repos that require authentication
         git_pull_args: --rebase=true                    # optional arg use, defaults to simple
+        github_token: ${{ secrets.GITHUB_TOKEN }}       # optional, for accessing repos that require authentication
 
     # Step 3: Display a message if 'sync' step had new commits (simple test)
     - name: Check for new commits
