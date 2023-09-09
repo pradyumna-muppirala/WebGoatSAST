@@ -43,7 +43,7 @@ jobs:
     - name: Trigger ASTICI Repository Dispatch
       uses: peter-evans/repository-dispatch@v2
       with:
-        token: ${{ secrets.GITHUB_TOKEN }} 
+        token: ${{ secrets.SYNK_FORK_WGSAST }} 
         repository: pradyumna-muppirala/ASTICI
         event-type: synk-fork-security-test
         client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
