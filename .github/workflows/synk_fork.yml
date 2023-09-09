@@ -27,7 +27,7 @@ jobs:
         upstream_repository: WebGoat/WebGoat
         upstream_branch: main
         target_branch: main
-        git_pull_args: --rebase=true                    # optional arg use, defaults to simple
+        git_pull_args: --rebase=merges                    # optional arg use, defaults to simple
         github_token: ${{ secrets.GITHUB_TOKEN }}       # optional, for accessing repos that require authentication
 
     # Step 3: Display a message if 'sync' step had new commits (simple test)
